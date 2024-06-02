@@ -1,0 +1,19 @@
+service: dummyServerless
+frameworkVersion: "4"
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+functions:
+  hello:
+    handler: src/handlers/hello.handler
+    events:
+      - http:
+          method: GET
+          path: /hello
+  byeFn:
+    handler: src/handlers/bye.handler
+    events:
+      - httpApi:
+          path: /bye
+          method: GET
