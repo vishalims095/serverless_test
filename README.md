@@ -14,3 +14,4 @@ npm install
 ## Step 5 : Deploy your changes (sls deploy)
 
 ## You are ready to go!
+
